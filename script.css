@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Anton&family=Caveat:wght@400..700&family=Comfortaa:wght@300..700&family=Fredoka:wght@300..700&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Fredoka';
+}
+
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background-image: linear-gradient(to right top, #00c9a7,#2cb69c,#3ca490,#469283,#4d8076);
+    color: #fff;
+    padding: 10px;
+}
+
+.calculator{
+    /* border: 1px solid black; */
+
+    width: 100%;
+    max-width: 600px;
+    margin: 150px auto;
+
+}
+.calculator p{
+    font-size: 3rem;
+    font-weight: 500;
+}
+
+.calculator p span{
+    color:#fbc531;
+}
+
+.input-box{
+    /* border : 1px solid black; */
+    margin: 40px 0;
+    padding: 35px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    background: rgb(255,255,255,0.4);
+}
+
+.input-box input{
+    border: none;
+    outline: none;
+    flex: 1;
+    margin-right: 20px;
+    padding: 14px 20px;
+    font-size: 1.2rem;
+    border-radius: 6px;
+    position: relative;
+}
+
+.input-box button{
+    background-color: #fbc531;
+    border: none;
+    outline: none;
+    padding: 15px 30px;
+    border-radius: 6px;
+    font-weight: 500;
+    color: #333;
+    cursor: pointer;
+}
+
+.input-box input::-webkit-calendar-picker-indicator{
+    top : 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: auto;
+    height: auto;
+    position: absolute;
+    background-position: calc(100% - 10px);
+    background-size: 30px;
+    cursor: pointer;
+}
+#result span{
+    color: #130f40;
+}
